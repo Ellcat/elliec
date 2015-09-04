@@ -3,4 +3,10 @@ class AdminUser < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, 
          :recoverable, :rememberable, :trackable, :validatable
+
+  has_many :posts
+  has_many :projects
+  has_many :comments
+  has_many :tasks
+
 end
