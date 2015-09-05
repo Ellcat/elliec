@@ -21,7 +21,8 @@
 
    <% @posts.each do |post| %>
         <div class="booyah-box col-xs-10 col-xs-offset-1">
-             <h1><%= post.title %></h1>
+            <h1><%= link_to post.title, post_path(post) %></h1><br />
+             
                 <i><%= post.body.html_safe %></i><br /><br />
                  <p><%= post.author %></p><br />
   </div>

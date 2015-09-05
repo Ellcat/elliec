@@ -10,6 +10,20 @@
   padding:20px;
 }
 
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 80px;
+}
+
+@media (min-width: 768px) {
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 50px;
+    }
+}
+
 .hero {
     background: url('homebg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -82,11 +96,12 @@ body {
 
     nav
 
-.navbar.navbar-default {
-    background:url("home-paper.png");
-    -webkit-box-shadow: 2px 0 5px rgba(0,0,0,.2);
+.navbar.navbar-inverse {
+  
+  background:url('/assets/binding_dark.png');
+  border-radius: 0;
+  box-shadow: 0px 1px 3px #2a2a2a;
 }
-
 
 
 
