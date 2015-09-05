@@ -1,29 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="booyah-box col-xs-10 col-xs-offset-1">
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
+      <div align="center">
+    
+        <h2><strong><%= @post.title %></strong></h2>
+      </div>
 
-<p>
-  <strong>Author:</strong>
-  <%= @post.author %>
-</p>
+      <br /><br /><br />
+          
+          <div class="col -xs-8 col-xs-offset-1">
+    
+            <p> <%= @post.body.html_safe %></p>
+          </div>
+    <br /><br /><br />
+</div>
 
-<p>
-  <strong>Published:</strong>
-  <%= @post.published %>
-</p>
+      <div class = "pull-right"
+     <em> Posted by <%= @post.author %> on <%= @post.published_at %></em>
+        </div>
+    
 
-<p>
-  <strong>Published at:</strong>
-  <%= @post.published_at %>
-</p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+
