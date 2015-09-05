@@ -1,3 +1,7 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -8,6 +12,7 @@
   margin-top:10px;
   margin-bottom:15px;
   padding:20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-fixed-top {
@@ -40,13 +45,15 @@
 }
 
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+
+  
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
@@ -55,10 +62,11 @@
 
 body {
   background: url('/assets/home-paper.png');
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
+
   font-size: 20px;
   color: #404040;
-  padding-top: 70px;
+  /*padding-top: 70px;*/
 }
 
 
